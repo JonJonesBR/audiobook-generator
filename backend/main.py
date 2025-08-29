@@ -563,6 +563,7 @@ async def get_available_voices():
 @app.get("/voices", response_class=JSONResponse)
 async def get_voices_endpoint():
     """Endpoint que lista as vozes disponíveis para o frontend."""
+    logger.info("Recebida requisição para /voices")
     voices = await get_available_voices()
     return voices
 
@@ -574,6 +575,7 @@ async def process_file_endpoint(
     use_gemini: bool = Form(False),
     book_title: Optional[str] = Form(None)
 ):
+    logger.info(f"Recebida requisição para /process_file com arquivo: {file.filename}, voz: {voice}, use_gemini: {use_gemini}, book_title: {book_title}")
     if not file or not file.filename:
         raise HTTPException(status_code=400, detail="Arquivo inválido ou não enviado.")
 

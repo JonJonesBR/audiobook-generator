@@ -2,102 +2,126 @@
 
 Transforme seus documentos e e-books em audiobooks com vozes naturais e de alta qualidade usando tecnologia de ponta.
 
-> 🎯 **Modo Fácil para Iniciantes**: Basta clicar duas vezes no arquivo `start-local.bat` e o programa faz todo o resto!
+## 🎯 Para Iniciantes
+
+> 🎯 **Modo Fácil: Comece em 2 Cliques!**
+
+Com o LiVox, transformar seus documentos em audiobooks é simples!
+
+**O que você precisa:**
+
+*   Um computador com Windows 10 ou superior.
+*   Conexão com a internet.
+
+**Como começar:**
+
+1.  **Baixe o LiVox:** [Clique aqui para baixar o LiVox](https://github.com/JonJonesBR/LiVox/archive/refs/heads/main.zip).
+2.  **Descompacte o arquivo:** Após o download, descompacte o arquivo ZIP.
+3.  **No Windows:** Dê um clique duplo no arquivo `start-local.bat`.
+
+O programa fará o resto! Ele irá:
+
+*   Verificar se tudo está instalado.
+*   Instalar o que for necessário (como o FFmpeg).
+*   Abrir o programa no seu navegador.
+
+**Pronto!** Agora é só seguir as instruções na tela para criar seu audiobook.
+
+**Dica:** Na primeira vez, pode demorar um pouco para baixar tudo. Seja paciente!
 
 ## 🌟 Recursos Principais
 
-- **Múltiplos Formatos**: Suporte para PDF, TXT, EPUB, DOC e DOCX
-- **Vozes Naturais**: Utiliza Microsoft Edge TTS para vozes realistas
-- **Otimização com IA**: Opção de usar Google Gemini para melhorar o texto
-- **Interface Moderna**: Frontend responsivo com Next.js e shadcn/ui
-- **Fácil Implantação**: Suporte a Docker para ambiente consistente
-- **Progresso em Tempo Real**: Acompanhe o status da conversão
+*   **Vozes Naturais:** Ouça seus documentos com vozes que parecem humanas.
+*   **Vários Formatos:** Funciona com PDF, TXT, EPUB, DOC e DOCX.
+*   **Otimização com IA (Opcional):** Use a inteligência artificial para melhorar o texto.
 
-## 🚀 Como Executar (Modo Fácil)
+## 📖 Como Usar (Passo a Passo)
 
-### Requisitos Mínimos do Sistema
-
-- **Windows**: Windows 10 ou superior
-- **Memória**: 4GB de RAM (recomendado 8GB)
-- **Espaço em disco**: 500MB livres
-- **Conexão com internet**: Para download de dependências
-
-### Opção 1: Executar com Um Clique (Recomendado para Iniciantes)
-
-Se você estiver no Windows, basta executar o arquivo `start-local.bat` e o programa irá:
-
-1. Verificar se todos os programas necessários estão instalados
-2. Instalar automaticamente o que for preciso (como FFmpeg)
-3. Configurar tudo sozinho
-4. Abrir o navegador automaticamente quando estiver pronto
-
-**Passos:**
-1. Dê um clique duplo no arquivo `start-local.bat`
-2. Aguarde alguns minutos enquanto o sistema se configura
-3. O navegador abrirá automaticamente com o programa pronto para uso
-
-> **Dica**: Se for a primeira vez que você executa o programa, pode demorar alguns minutos para baixar e instalar todas as dependências.
-
-### Opção 2: Executar com Docker (Para Usuários Avançados)
-
-Se você tem o Docker instalado:
-
-1. Execute `start-dev.sh` (Linux/Mac) ou `start-dev.bat` (Windows)
-2. Aguarde a inicialização
-3. Acesse http://localhost:3000 no navegador
-
-## 📖 Como Usar
-
-1. **Acesse o Aplicativo**: Abra http://localhost:3000 no navegador (abre automaticamente)
-2. **Selecione um Arquivo**: Clique em "Escolher arquivo" e selecione seu documento
-3. **Escolha uma Voz**: Selecione uma das vozes disponíveis em português
-4. **Configure Opções**:
-   - Adicione um título para o audiobook (opcional)
-   - Ative a IA Gemini para melhorar o texto (opcional)
-5. **Gere o Audiobook**: Clique em "Gerar Audiobook"
-6. **Acompanhe o Progresso**: Veja o status em tempo real
-7. **Baixe o Resultado**: Quando pronto, o download começará automaticamente
+1.  **Abra o LiVox:** O programa abre automaticamente no seu navegador (geralmente em http://localhost:3000).
+2.  **Selecione o Arquivo:** Clique em "Escolher arquivo" e selecione o documento que você quer transformar em audiobook.
+3.  **Escolha a Voz:** Selecione uma das vozes em português disponíveis.
+4.  **Configure (Opcional):**
+    *   Adicione um título para o seu audiobook.
+    *   Ative a IA Gemini para melhorar o texto.
+5.  **Gere o Audiobook:** Clique em "Gerar Audiobook".
+6.  **Acompanhe o Progresso:** Veja o status da conversão na tela.
+7.  **Baixe o Resultado:** Quando o processo terminar, o download do audiobook começará automaticamente.
 
 ## 🛑 Como Parar o Programa
 
-- **No Windows**: Execute o arquivo `stop-local.bat` ou feche as janelas do terminal que apareceram
-- **No Linux/Mac**: Pressione Ctrl+C nas janelas do terminal
+*   **No Windows:** Execute o arquivo `stop-local.bat` ou feche as janelas do terminal que apareceram.
+*   **No Linux/Mac:** Pressione Ctrl+C nas janelas do terminal.
 
-## 📁 Scripts Disponíveis
+## ❓ Dúvidas?
 
-### Scripts para Iniciar o Programa
+Se você tiver algum problema, aqui estão algumas dicas:
 
-- `start-local.bat`: Script principal que inicia todo o sistema (recomendado)
-- `start-backend.bat`: Inicia apenas o backend (serviço que processa os arquivos)
-- `start-frontend.bat`: Inicia apenas o frontend (interface do usuário)
-- `start-dev.sh`: Script para desenvolvedores usando Docker
+*   **O programa não abre:** Na primeira vez, pode demorar um pouco para baixar e instalar tudo. Espere alguns minutos e verifique se há alguma janela do terminal aberta.
+*   **Mensagem "Porta já em uso":** Outro programa está usando a mesma porta que o LiVox precisa. Tente executar `stop-local.bat` ou reiniciar o computador.
+*   **Outros problemas:** Se você encontrar outros problemas, siga as instruções na tela ou consulte a seção para programadores para obter mais informações sobre como solucionar problemas.
 
-### Scripts para Parar o Programa
+---
 
-- `stop-local.bat`: Para todos os serviços do programa
-- `stop.sh`: Script para parar serviços em ambiente Docker
+## 📝 Licença
 
-## ❓ Problemas Comuns e Soluções
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-### O programa não abre ou trava na primeira execução
+---
 
-- **Causa**: Na primeira vez, o sistema precisa baixar e instalar várias dependências, o que pode levar alguns minutos.
-- **Solução**: Aguarde até 10 minutos na primeira execução. Verifique se há janelas do terminal abertas mostrando o progresso.
+Feito com ❤️ para a comunidade de audiobooks
 
-### Mensagem "Porta já em uso"
+## 👨‍💻 Para Programadores
 
-- **Causa**: Outro programa está usando as portas 3000 ou 8000.
-- **Solução**: Execute o arquivo `stop-local.bat` para liberar as portas. Se ainda persistir, reinicie o computador.
+### Estrutura do Projeto
 
-### Mensagem "Python não encontrado" ou "Node.js não encontrado"
+-   **frontend/**: Código do frontend (Next.js)
+-   **backend/**: Código do backend (Python, Flask)
+-   **build/**: Arquivos gerados pelo processo de build
+-   **backend/audiobooks/**: Arquivos de áudio gerados
+-   **backend/uploads/**: Arquivos de upload
+-   **start-*.bat/sh**: Scripts para iniciar e parar o projeto
 
-- **Causa**: As dependências necessárias não estão instaladas.
-- **Solução**: O script `start-local.bat` tenta instalar automaticamente as dependências. Se falhar, siga as instruções que aparecem na tela.
+### Como Configurar o Ambiente de Desenvolvimento
 
-### O áudio não é gerado
+**Pré-requisitos:**
 
-- **Causa**: O FFmpeg não está instalado corretamente.
-- **Solução**: O script tenta instalar o FFmpeg automaticamente. Se falhar, siga as instruções na tela para instalar manualmente.
+*   Node.js e npm (ou yarn)
+*   Python 3.x
+*   Docker (opcional)
+*   FFmpeg (necessário para conversão de áudio)
+
+**Passos:**
+
+1.  **Instale as dependências:**
+    *   No diretório `frontend/`, execute `npm install` ou `yarn install`.
+    *   No diretório `backend/`, execute `pip install -r requirements.txt`.
+2.  **Configure as variáveis de ambiente:**
+    *   Crie um arquivo `.env.local` no diretório `frontend/`.
+    *   Adicione as variáveis necessárias, como:
+        ```
+        NEXT_PUBLIC_API_URL=http://localhost:8000
+        ```
+
+### Como Executar o Projeto
+
+1.  **Backend:** No diretório `backend/`, execute `python main.py`.
+2.  **Frontend:** No diretório `frontend/`, execute `npm run dev` ou `yarn dev`.
+3.  Acesse o frontend em http://localhost:3000.
+
+### Como Contribuir
+
+1.  **Faça um fork do repositório.**
+2.  **Crie uma branch para sua feature:** `git checkout -b minha-feature`
+3.  **Faça suas alterações e commit:** `git commit -m "Adicionei minha feature"`
+4.  **Envie suas alterações para a branch:** `git push origin minha-feature`
+5.  **Crie um Pull Request no GitHub.**
+
+### Tecnologias Utilizadas
+
+*   **Frontend:** Next.js, React, shadcn/ui
+*   **Backend:** Python, Flask, Microsoft Edge TTS, Google Gemini (opcional)
+*   **Banco de Dados:** Nenhum (arquivos locais)
+*   **Containerização:** Docker
 
 ## 📝 Licença
 

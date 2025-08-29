@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configuração para servir assets corretamente
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
-  // Remover output standalone para desenvolvimento
-  // output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  }
 };
 
 module.exports = nextConfig;

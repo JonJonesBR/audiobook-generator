@@ -10,5 +10,11 @@
     "message": "Tarefa recebida e na fila.",
     "progress": 0,
     "file_path": null
+  },
+  "92622776-7b8e-4c7b-bcf2-8925e5db3d39": {
+    "status": "in_queue",
+    "message": "Tarefa recebida e na fila.",
+    "progress": 0,
+    "file_path": null
   }
 }

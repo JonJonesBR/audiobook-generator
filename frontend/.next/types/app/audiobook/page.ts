@@ -1,4 +1,4 @@
-// File: C:\Users\Micro\Desktop\audiobook-generator\frontend\src\app\audiobook\page.tsx
+// File: C:\Users\Micro\Desktop\PROJETOS\LIVOX\frontend\src\app\audiobook\page.tsx
 import * as entry from '../../../../src/app/audiobook/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
